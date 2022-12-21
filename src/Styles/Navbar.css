@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color:#1F2937;
+    height:12vh;
+    position:absolute;
+    top:0;
+    right:0;
+    width:100vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.major{
+    width:85%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    background-image: url("../Images/Home/LogoSmall.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:80%;
+    width:20%;
+}
+.pages{
+    height: 80%;
+    width: 75%;
+    display :flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.page-links{
+    text-decoration: none;
+    color:#D1D5DB;
+    background-color: #1F2937;
+    padding:10px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.page-links:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #374151;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+}
+.active {
+    text-decoration: none;
+    color: #D1D5DB;
+    background-color: #111827;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.login {
+    height: 80%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-btn{
+    background-color: #3B82F6;
+    border: none;
+    height:60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+    border-radius: 5px;
+}
+.btn-icon{
+    background-image: url("../Images/Home/login_FILL0_wght400_GRAD0_opsz48.png");
+    width:20px;
+    height:20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 5px;
+}
+.btn-txt{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+.btn-txt:hover{
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
