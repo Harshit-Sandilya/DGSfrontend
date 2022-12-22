@@ -1,26 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
 .nav{
     background-color:#1F2937;
     height:12vh;
-    position:absolute;
+    position:fixed;
     top:0;
     right:0;
     width:100vw;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-}
-.major{
-    width:85%;
-    height:100%;
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .logo{
@@ -30,6 +19,7 @@
     background-repeat: no-repeat;
     height:80%;
     width:20%;
+    order:1;
 }
 .pages{
     height: 80%;
@@ -38,6 +28,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    order:2;
 }
 .page-links{
     text-decoration: none;
@@ -77,6 +68,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    order:3;
 }
 .login-btn{
     background-color: #3B82F6;
@@ -111,4 +103,65 @@
     font-style: normal;
     font-weight: 600;
     font-size: 0.75rem;
+}
+@media (max-width:900px){
+    .pages{
+        grid-area: pages;
+        flex-direction: column;
+        width:100vw;
+        height:60vw;
+        display: none;
+    }
+    .nav{
+        width:100vw;
+        height:fit-content;
+        display:grid;
+        grid-template-areas: 
+            "menu logo login"
+            "pages pages pages";
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+    .menu{
+        grid-area: menu;
+        width:30vw;
+        height:9.6vh;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-icon{
+        height:40px;
+        width:40px;
+        border-radius: 10px;
+        background-color: #1F2937;
+        background-image: url("../Images/Home/menu_FILL0_wght400_GRAD0_opsz48.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .menu-icon:hover{
+        height:40px;
+        width:40px;
+        border-radius: 10px;
+        background-color: #374151;
+        background-image: url("../Images/Home/menu_FILL0_wght400_GRAD0_opsz48.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .logo{
+        grid-area:logo;
+        display:block;
+        width:40vw;
+        height:9.6vh;
+    }
+    .login{
+        grid-area: login;
+        width:30vw;
+        height:9.6vh;
+    }
 }

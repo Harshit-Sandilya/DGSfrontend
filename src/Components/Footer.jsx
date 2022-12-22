@@ -4,7 +4,7 @@ import React from "react";
 export default function Footer(){
     return (
         <div className="footer">
-            <div className="logo"></div>
+            <div className="footer-logo"></div>
             <div className="seprator"></div>
             <div className="quick-links">
                 <div className="quick-links-head">
@@ -19,6 +19,7 @@ export default function Footer(){
                     <a href="#" className="link">Uniform</a>
                 </div>
             </div>
+            <div className="vertical-sep"></div>
             <div className="seprator"></div>
             <div className="contact-info">
                 <div className="phone">
