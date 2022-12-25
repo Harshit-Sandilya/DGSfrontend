@@ -4,14 +4,16 @@ import Navbar from "./pages/assets/navbar";
 import Job from "./pages/job";
 import Gallery from "./pages/gallery";
 import Cal from "./pages/calendar";
+import Admission from "./pages/admission/admission";
 
 function App() {
   return (
     <div>
       <Navbar />
+      <Admission />
       {/* <Teacher /> */}
       {/* <Job /> */}
-      <Gallery />
+      {/* <Gallery /> */}
       {/* <Cal /> */}
     </div>
   );
