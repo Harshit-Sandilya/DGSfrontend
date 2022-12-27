@@ -2,9 +2,46 @@ import "../../Styles/StuReg.css";
 import React from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import { useNavigate } from "react-router-dom";
+const navigate = useNavigate();
 
 export default function StuReg(){
-    const [formData,setFormData]=React.useState("");
+    const [formData,setFormData]=React.useState({
+        fullname:"",
+        class:"",
+        fathername:"",
+        mothername:"",
+        dob:"",
+        phone:"",
+        iswhatsapp:true,
+        whatsapp:"",
+        address:"",
+    });
+    
+    function handleChange(e){
+        setFormData((prev)=>{
+            return {
+                ...prev,
+                [e.target.name]:e.target.type==='checkbox'?e.target.checked:e.target.value
+            }
+        })
+    }
+    function handleSubmit(){
+        console.log(formData);
+        setFormData({
+        fullname:"",
+        class:"",
+        fathername:"",
+        mothername:"",
+        dob:"",
+        phone:"",
+        iswhatsapp:true,
+        whatsapp:"",
+        address:"",
+        });
+        alert("Application Submitted\nWe shall contact you soon...");
+    }
+    
     return(
         <div>
             <div className="reg-container">
@@ -18,6 +55,8 @@ export default function StuReg(){
                                     name="fullname"
                                     placeholder="Full Name"
                                     type="text"
+                                    value={formData.fullname}
+                                    onChange={(event)=>handleChange(event)}
                                 >
                                 </input>
                             </div>
@@ -26,7 +65,10 @@ export default function StuReg(){
                                 <select 
                                     className="class-input"
                                     name="class"
+                                    value={formData.class}
+                                    onChange={(event)=>{handleChange(event)}}
                                 >
+                                    <option vlaue="">--</option>
                                     <option value="III">III</option>
                                     <option value="IV">IV</option>
                                     <option value="V">V</option>
@@ -43,6 +85,8 @@ export default function StuReg(){
                                     name="fathername"
                                     placeholder="Father's Name"
                                     type="text"
+                                    value={formData.fathername}
+                                    onChange={(event)=>handleChange(event)}
                                 >
                                 </input>
                             </div>
@@ -52,6 +96,8 @@ export default function StuReg(){
                                     name="mothername"
                                     placeholder="Mother's Name"
                                     type="text"
+                                    value={formData.mothername}
+                                    onChange={(event)=>handleChange(event)}
                                 >
                                 </input>
                             </div>
@@ -64,6 +110,8 @@ export default function StuReg(){
                                     name="dob"
                                     placeholder="dd/mm/yyyy"
                                     type="text"
+                                    value={formData.dob}
+                                    onChange={(event)=>handleChange(event)}
                                 >
                                 </input>
                             </div>
@@ -74,6 +122,8 @@ export default function StuReg(){
                                     name="phone"
                                     placeholder="+91XXXXXXXXXX"
                                     type="text"
+                                    value={formData.phone}
+                                    onChange={(event)=>handleChange(event)}
                                 >
                                 </input>
                             </div>
@@ -82,30 +132,40 @@ export default function StuReg(){
                             <div className="check">
                                 <input 
                                     className="check-input"
-                                    name="whatsapp"
-                                    defaultChecked={true}
+                                    name="iswhatsapp"
+                                    checked={formData.iswhatsapp}
                                     type="checkbox"
+                                    onChange={(event)=>handleChange(event)}
                                 >
                                 </input>
                                 <h6 className="check-text">This is also my WhatsApp number</h6>
                             </div>
-                            <div className="whatsapp-number">
+                            {!formData.iswhatsapp && <div className="whatsapp-number" id="whatsapp-id">
                                 <label htmlFor="whatsapp" className="labels">WhatsApp Number</label>
                                 <input 
                                     className="text-input"
                                     name="whatsapp"
                                     placeholder="+91XXXXXXXXXX"
                                     type="text"
+                                    value={formData.whatsapp}
+                                    onChange={(event)=>handleChange(event)}
                                 >
                                 </input>
-                            </div>
+                            </div>}
                         </div>
                         <div className="row5">
                             <label className="labels" htmlFor="address">Address</label>
-                            <textarea className="address" name="address"></textarea>
+                            <textarea 
+                                className="address" 
+                                name="address"
+                                type="text"
+                                value={formData.address}
+                                onChange={(event)=>handleChange(event)}
+                            >
+                            </textarea>
                         </div>
                         <div className="row6">
-                            <button className="submit">Submit</button>
+                            <button className="submit" onClick={()=>{handleSubmit()}}>Submit</button>
                         </div>
                     </div>
                 </div>
