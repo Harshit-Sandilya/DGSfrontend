@@ -5,12 +5,14 @@ import Job from "./pages/job";
 import Gallery from "./pages/gallery";
 import Cal from "./pages/calendar";
 import Admission from "./pages/admission/admission";
+import Tapplication from "./pages/teacher/teacher_app";
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Admission />
+      <Tapplication />
+      {/* <Admission /> */}
       {/* <Teacher /> */}
       {/* <Job /> */}
       {/* <Gallery /> */}

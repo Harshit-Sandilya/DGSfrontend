@@ -1,0 +1,279 @@
+
+.Tback{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+
+.tback_img
+{
+    position: absolute;
+    z-index: 0;
+    margin: auto;
+    width: 80%;
+    height: 90vh;
+    
+    object-fit: contain;
+    /* aspect-ratio: 6/5;  */
+}
+.Tlayout
+{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* top: 10%; */
+width: 50%;
+max-width: 1400px;
+min-height: 620px;
+padding: 15px 20px;
+
+
+background: rgba(31, 41, 55, 0.75);
+box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+
+.Ttitle
+
+{
+align-self:flex-start;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+}
+.Tbar
+{
+    padding: 10px;
+    width: 90%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bar-section
+{
+    background: rgba(15, 20, 27, 0.75);
+    border-radius: 30px;
+    color: white;
+    padding: 12px 20px;
+    transition: 300ms;
+}
+
+.bar-section:hover
+{
+    background: #318CE7;
+}
+.Tactive
+{
+    background: #318CE7;
+}
+.basic
+{
+  margin: 5px ;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 90%;
+
+}
+.brow
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 5px;
+}
+.input_field
+{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 3px 10px;
+    padding: 10px;
+    width: 45%;
+    height: 30px;
+}
+.dob
+{
+    margin-left: 15px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1.2rem;
+line-height: 48px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+.text-area
+{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    margin: 3px 10px;
+    padding: 10px;
+    width: 100%;
+    
+    height: 30px;
+    height: 100px;
+}
+.switch
+{
+    display: flex;
+
+    max-width:300px ;
+    width: 40%;
+
+}
+.ele
+{
+
+    width: 50%;
+    font-family: 'Poppins';
+    padding: 5px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background: rgba(15, 20, 27, 0.75);
+  
+}
+.Sactive
+{
+    background:#318CE7;
+}
+
+.ele1
+{
+    border-radius: 10px 0px 0px 10px;
+}
+.ele2
+{
+    border-radius: 0px 10px 10px 0px;
+}
+.Stext
+{
+    width: 80%;
+}
+
+.switchicon
+{
+    width: 20px;
+    object-fit: contain;
+    aspect-ratio: 1/2;
+}
+.next-btn
+{
+   
+    margin-top: auto;
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+
+
+
+    font-size: 1.2rem ;
+    padding: 10px 30px;
+background: #318CE7;
+border-radius: 10px;
+
+}
+.sub-title
+{
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.Etarea
+{
+    font-size: 1.2rem;
+    height: 140px;
+}
+.Exparea
+{
+    height: 160px;
+}
+.miscField
+{
+    width: 30%;
+    padding: 20px;
+    margin-left: 20px ;
+    margin-right: 20px;
+    text-align: center;
+
+}
+.center
+{
+    justify-content: center;
+}
+.Mtext1
+{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1.2rem;
+line-height:1.4rem;
+text-align: center;
+
+
+
+color: #FFFFFF;
+
+
+}
+.Aleft
+{
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.ul-misc
+{
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+.ol-misc
+{
+    margin-left: 15px;
+}
+.Cactive
+{
+    display: block;
+}
