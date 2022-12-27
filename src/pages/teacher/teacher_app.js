@@ -70,11 +70,10 @@ function Tapplication() {
         <button
           className="next-btn"
           onClick={() => {
-            if (isActive == 3) setActive(0);
-            else setActive(isActive + 1);
+            if (isActive != 3) setActive(isActive + 1);
           }}
         >
-          Next
+          {isActive != 3 ? "Next" : "Agree and Continue"}
         </button>
       </div>
     </div>
