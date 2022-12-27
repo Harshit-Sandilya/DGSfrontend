@@ -1,6 +1,8 @@
 import React from "react";
 import female from "../../images/female.png";
 import male from "../../images/male.png";
+import married_img from "../../images/married.png";
+import unmarried from "../../images/unmar.png";
 function Basic(props) {
   const { gender, setgender, married, setmarried } = props;
   return (
@@ -55,7 +57,7 @@ function Basic(props) {
             }}
           >
             <div className="Stext">Married</div>
-            <img src={female} className="switchicon"></img>
+            <img src={married_img} className="switchicon"></img>
           </div>
           <div
             className={`ele ele2 ${married === "married" ? "Sactive" : ""}`}
@@ -63,7 +65,7 @@ function Basic(props) {
               setmarried("married");
             }}
           >
-            <img src={male} className="switchicon"></img>
+            <img src={unmarried} className="switchicon"></img>
             <div className="Stext">Unmarried</div>
           </div>
         </div>
