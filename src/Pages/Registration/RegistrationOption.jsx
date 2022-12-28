@@ -23,7 +23,7 @@ export default function RegOption(){
                     </Link>}
                 </div>
                 <div className="teacher-app" onMouseEnter={()=>{setOnTea(true)}} onMouseLeave={()=>{setOnTea(false)}}>
-                    {onTea && <Link to="#" className="cover-link">
+                    {onTea && <Link to="/teacherapplication" className="cover-link">
                         <div className="cover">
                             <div className="cover-text">Teacher</div>
                             <div className="cover-arrow">
