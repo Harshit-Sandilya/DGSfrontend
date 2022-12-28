@@ -125,13 +125,7 @@ text-decoration-line: underline;
 
 color: #000000;
 }
-/* .adheader
-{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-} */
+
 .head
 {
     display: flex;
