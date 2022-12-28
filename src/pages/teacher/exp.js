@@ -10,6 +10,10 @@ function Experience() {
         }
         maxLength={20}
       ></textarea>
+      <input type="file" name="file" id="file" className="inputfile" />
+      <label for="file" className="filetext">
+        Add experience
+      </label>
     </div>
   );
 }

@@ -31,10 +31,11 @@ color: #C35E88;
 {
    
     height: 140vh;
-    width: 8px;
+    width: 0.4%;
+    max-width: 4px;
     background: linear-gradient(#FFFFFF, #CBAF60, #CBAF60,#CBAF60,#CBAF60,#FFFFFF);;
     position: absolute;
-    left: 50%;
+    left: 49.8%;
     margin-left: -3px;
     top: 30px;
 }
@@ -76,6 +77,14 @@ color: #C35E88;
    
 
 }
+.rarrow
+{
+    margin-left: -2px;
+}
+.larrow
+{
+    margin-right: -2px;
+}
 
 .Atarget
 {
@@ -93,7 +102,7 @@ color: #C35E88;
 .section
 {
     position: relative;
-    width: 50.6%;
+    width: 50.2%;
 }
 
 .content
@@ -176,7 +185,7 @@ color: #FFFFFF;
 }
 .rights
 {
-    margin-left: auto;
+    margin-left: 49.3%
 }
 .rhead
 {
@@ -185,4 +194,55 @@ color: #FFFFFF;
 .roverlay
 {
     left: 5%;
+}
+
+
+@media only screen and (max-width: 1200px) 
+{
+    .adoverlay
+    {
+        margin-top: 20px;
+        z-index: 100;
+        width: 80vw;
+    }
+ 
+    .rights>.adoverlay
+    {
+        margin-left: -100%;
+    }
+    .rights>.adimg
+    {
+    margin-left: 15px;
+    }
+    .rect
+    {
+        width: 2%;
+        height: 100vh;
+    }
+    .Acenter
+    {
+        width: 10px;
+        height: 10px;
+        border-radius: 12px;
+    }
+    
+    .Atarget
+    {
+        width: 8px;
+        height: 8px;
+
+    }
+    .Aline
+    {
+        height: 3px;
+    }
+    .rarrow
+    {
+        margin-left: -3px;
+    }
+    .larrow
+    {
+        margin-right: -3px;
+    }
+
 }

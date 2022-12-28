@@ -11,8 +11,8 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Tapplication />
-      {/* <Admission /> */}
+      {/* <Tapplication /> */}
+      <Admission />
       {/* <Teacher /> */}
       {/* <Job /> */}
       {/* <Gallery /> */}

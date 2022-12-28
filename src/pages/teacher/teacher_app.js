@@ -6,6 +6,7 @@ import Basic from "./basic";
 import Education from "./edu";
 import Experience from "./exp";
 import Misc from "./misc";
+import DropDown from "./responsive_drop";
 
 function Tapplication() {
   const [isActive, setActive] = useState(0);
@@ -49,6 +50,8 @@ function Tapplication() {
           >
             Miscellaneous
           </button>
+
+          <DropDown isActive={isActive} setActive={setActive} />
         </div>
 
         {
@@ -70,10 +73,10 @@ function Tapplication() {
         <button
           className="next-btn"
           onClick={() => {
-            if (isActive != 3) setActive(isActive + 1);
+            if (isActive !== 3) setActive(isActive + 1);
           }}
         >
-          {isActive != 3 ? "Next" : "Agree and Continue"}
+          {isActive !== 3 ? "Next" : "Agree and Continue"}
         </button>
       </div>
     </div>
