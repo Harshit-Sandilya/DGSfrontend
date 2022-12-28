@@ -2,6 +2,7 @@ import "../../Styles/Home.css";
 import React from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import JoinUs from "../../Components/JoinUs";
 import Events from "../../TestData/Events";
 
 export default function Home(){
@@ -118,6 +119,7 @@ export default function Home(){
             </div>
             <Footer/>
             <Navbar page="Home"/>
+            <JoinUs/>
         </div>
     )
 }

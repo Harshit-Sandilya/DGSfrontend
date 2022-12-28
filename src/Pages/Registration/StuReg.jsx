@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router-dom";
-const navigate = useNavigate();
+import JoinUs from "../../Components/JoinUs";
 
 export default function StuReg(){
     const [formData,setFormData]=React.useState({
