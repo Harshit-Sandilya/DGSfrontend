@@ -1,5 +1,6 @@
 import "../Styles/Footer.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer(){
     return (
@@ -11,12 +12,12 @@ export default function Footer(){
                     <h6 className="links-heading">Quick Links</h6>
                 </div>
                 <div className="links-list">
-                    <a href="#" className="link">Hostel</a>
-                    <a href="#" className="link">Mess Menu</a>
-                    <a href="#" className="link">Location</a>
-                    <a href="#" className="link">Rules and Regulations</a>
-                    <a href="#" className="link">Scholarships</a>
-                    <a href="#" className="link">Uniform</a>
+                    <Link to="#" className="link">Hostel</Link>
+                    <Link to="#" className="link">Mess Menu</Link>
+                    <Link to="#" className="link">Location</Link>
+                    <Link to="#" className="link">Rules and Regulations</Link>
+                    <Link to="#" className="link">Scholarships</Link>
+                    <Link to="#" className="link">Uniform</Link>
                 </div>
             </div>
             <div className="vertical-sep"></div>

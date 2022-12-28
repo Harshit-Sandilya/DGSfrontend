@@ -4,6 +4,7 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import arrowBack from "../../Images/Registration/arrow_back_FILL0_wght400_GRAD0_opsz48.png";
 import arrowFront from "../../Images/Registration/arrow_forward_FILL0_wght400_GRAD0_opsz48.png";
+import { Link } from "react-router-dom";
 
 export default function RegOption(){
     const [onStu,setOnStu]=React.useState(window.matchMedia("(max-width:900px)").matches);
@@ -12,24 +13,24 @@ export default function RegOption(){
         <div>
             <div className="option-container">
                 <div className="stu-reg" onMouseEnter={()=>{setOnStu(true)}} onMouseLeave={()=>{setOnStu(false)}}>
-                    {onStu && <a href="#" className="cover-link">
+                    {onStu && <Link to="/studentregistration" className="cover-link">
                         <div className="cover">
                             <div className="cover-text">Student</div>
                             <div className="cover-arrow">
                                 <img src={arrowBack}></img>
                             </div>
                         </div>
-                    </a>}
+                    </Link>}
                 </div>
                 <div className="teacher-app" onMouseEnter={()=>{setOnTea(true)}} onMouseLeave={()=>{setOnTea(false)}}>
-                    {onTea && <a href="#" className="cover-link">
+                    {onTea && <Link to="#" className="cover-link">
                         <div className="cover">
                             <div className="cover-text">Teacher</div>
                             <div className="cover-arrow">
                                 <img src={arrowFront}></img>
                             </div>
                         </div>
-                    </a>}
+                    </Link>}
                 </div>
             </div>
             <Navbar/>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../Styles/JoinUs.css";
 
 export default function JoinUs(){
@@ -6,7 +7,7 @@ export default function JoinUs(){
     function DisplayText()
     {
         if(isOver)
-        return (<a className="text" href="#">Join us</a>)
+        return (<Link className="text" to="/joinus">Join us</Link>)
         return (<p>Interested ?</p>)
     }
 

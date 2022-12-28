@@ -3,7 +3,6 @@ import React from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router-dom";
-import JoinUs from "../../Components/JoinUs";
 
 export default function StuReg(){
     const [formData,setFormData]=React.useState({
@@ -17,6 +16,7 @@ export default function StuReg(){
         whatsapp:"",
         address:"",
     });
+    const navigate = useNavigate();
     
     function handleChange(e){
         setFormData((prev)=>{
@@ -40,6 +40,7 @@ export default function StuReg(){
         address:"",
         });
         alert("Application Submitted\nWe shall contact you soon...");
+        navigate("/",{replace:true});
     }
     
     return(

@@ -1,6 +1,16 @@
-.stu-reg{
+.curr,.co-curr {
+    width: 40vw;
+    height: 40vw;
+    background: #FDFDFD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.curr{
     background-image: url("../Images/Curri&Cocurri/girl-sitting-with-the-book-isolated-on-the-white-background-studying-concept-illustration-free-vector.png");
 }
-.teacher-app{
+.co-curr{
     background-image: url("../Images/Curri&Cocurri/clip-art-vector-graphics-illustration-sports-image-png-favpng-MnA1M1tTUVXLJrZ6jxq0qBQuY.png");
 }
