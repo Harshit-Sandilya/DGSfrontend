@@ -38,6 +38,7 @@ color: #C35E88;
     left: 49.8%;
     margin-left: -3px;
     top: 30px;
+    min-height: 1000px;
 }
 
 .Acenter
@@ -191,7 +192,7 @@ color: #FFFFFF;
 }
 
 
-@media only screen and (max-width: 1200px) 
+@media only screen and (max-width: 1000px) 
 {
     .adoverlay
     {
@@ -212,6 +213,7 @@ color: #FFFFFF;
     {
         width: 2%;
         height: 100vh;
+        min-height: 400px;
     }
     .Acenter
     {
