@@ -5,6 +5,10 @@ import RegOption from './Pages/Registration/RegistrationOption'
 import StuReg from './Pages/Registration/StuReg'
 import TeacherApp from './Pages/Registration/TeacherApp'
 import Admission from './Pages/Admission/Admission'
+import NotFound from './Pages/NotFound'
+import Rules from './Pages/Rules/Rules'
+import ContactUs from './Pages/Contact/ContactUs'
+import AboutUs from './Pages/About/AboutUs'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 
 function App() {
@@ -17,6 +21,11 @@ function App() {
         <Route path="/studentregistration" element={<StuReg/>}/>
         <Route path="/teacherapplication" element={<TeacherApp/>}/>
         <Route path="/admissiondetails" element={<Admission/>}/>
+        <Route path="/rules" element={<Rules/>}/>
+        <Route path="/contactus" element={<ContactUs/>}/>
+        <Route path="/aboutus" element={<AboutUs/>}/>
+        <Route path="*" element={<NotFound/>}/>
+        
       </Routes>
     </Router>
   )
