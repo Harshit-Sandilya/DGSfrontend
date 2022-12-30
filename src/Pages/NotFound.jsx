@@ -6,6 +6,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function NotFound() {
 	const navigate = useNavigate();
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div>
 			<div className="nf-container">

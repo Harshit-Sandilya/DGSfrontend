@@ -6,6 +6,9 @@ import "../../Styles/Rules.css";
 import "../../Styles/Home.css";
 
 export default function Rules() {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div>
 			<div className="rules-container">

@@ -7,11 +7,11 @@ export default function JoinUs() {
 	function DisplayText() {
 		if (isOver)
 			return (
-				<Link className="text" to="/joinus">
+				<Link className="join-text" to="/joinus">
 					Join us
 				</Link>
 			);
-		return <p>Interested ?</p>;
+		return <p className="join-text">Interested ?</p>;
 	}
 
 	return (
@@ -24,7 +24,7 @@ export default function JoinUs() {
 				setIsOver(false);
 			}}
 		>
-			<div className="text">
+			<div className="join-text">
 				<DisplayText />
 			</div>
 		</div>

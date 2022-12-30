@@ -12,22 +12,22 @@ export default function Footer() {
 					<h6 className="links-heading">Quick Links</h6>
 				</div>
 				<div className="links-list">
-					<Link to="#" className="link">
+					<Link to="/hostel" className="link">
 						Hostel
 					</Link>
-					<Link to="#" className="link">
+					<Link to="/messmenu" className="link">
 						Mess Menu
 					</Link>
-					<Link to="#" className="link">
+					<Link to="/location" className="link">
 						Location
 					</Link>
 					<Link to="/rules" className="link">
 						Rules and Regulations
 					</Link>
-					<Link to="#" className="link">
+					<Link to="/scholarship" className="link">
 						Scholarships
 					</Link>
-					<Link to="#" className="link">
+					<Link to="/uniform" className="link">
 						Uniform
 					</Link>
 				</div>

@@ -14,7 +14,7 @@
 	right: 30px;
 	box-shadow: 1px 2px 10px black;
 }
-.text {
+.join-text {
 	text-decoration: none;
 	color: white;
 	font-size: 1.5rem;
@@ -28,7 +28,7 @@
 		bottom: 15px;
 		right: 15px;
 	}
-	.text {
+	.-join-text {
 		font-size: 0.75rem;
 	}
 }

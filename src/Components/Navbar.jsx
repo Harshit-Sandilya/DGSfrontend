@@ -58,13 +58,13 @@ export default function Navbar(props) {
 					Admission
 				</Link>
 				<Link
-					to={props.page == "Calender" ? null : "#"}
+					to={props.page == "Calender" ? null : "/calender"}
 					className={props.page == "Calender" ? "active" : "page-links"}
 				>
 					Calender
 				</Link>
 				<Link
-					to={props.page == "Gallery" ? null : "#"}
+					to={props.page == "Gallery" ? null : "/gallery"}
 					className={props.page == "Gallery" ? "active" : "page-links"}
 				>
 					Gallery

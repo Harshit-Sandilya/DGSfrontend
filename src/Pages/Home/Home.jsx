@@ -31,8 +31,8 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="vision">
-					<h1 className="vision-head">VISION</h1>
-					<p className="vision-body">
+					<h1 className="home-vision-head">VISION</h1>
+					<p className="home-vision-body">
 						To provide a platform and an environment to each girl child that can
 						encourage fearless intellectual curiosity, and an uncompromising sense of
 						fair play empower girls to be future leaders with a global perspective and
@@ -46,10 +46,7 @@ export default function Home() {
 					<div className="event">
 						<h1 className="event-head">EVENTS</h1>
 						<div className="event-sep"></div>
-						<div className="event-list">
-							{/* fix this */}
-							{eventsDisp}
-						</div>
+						<div className="event-list">{eventsDisp}</div>
 					</div>
 					<div className="media">
 						<div className="media-head">MEDIA</div>

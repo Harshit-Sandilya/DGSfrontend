@@ -1,341 +1,368 @@
-.space-top {
-	height: 15vh;
+.space-top{
+    height: 15vh;
 }
 .Tback {
-	width: 100%;
-	min-height: 100vh;
+    width: 100%;
+    min-height: 100vh;
 
-	margin: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .tback_img {
-	position: absolute;
-	z-index: 0;
-	margin: auto;
-	width: 80%;
-	height: 90vh;
+    position: absolute;
+    z-index: 0;
+    margin: auto;
+    width: 80%;
+    height: 90vh;
 
-	object-fit: contain;
-	/* aspect-ratio: 6/5;  */
+    object-fit: contain;
+    /* aspect-ratio: 6/5;  */
 }
 
 .Tlayout {
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	/* top: 10%; */
-	width: 50%;
-	max-width: 1400px;
-	min-height: 620px;
-	padding: 15px 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* top: 10%; */
+    width: 50%;
+    max-width: 1400px;
+    min-height: 620px;
+    padding: 15px 20px;
 
-	background: rgba(31, 41, 55, 0.75);
-	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
-	border-radius: 20px;
+
+    background: rgba(31, 41, 55, 0.75);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 }
 
 .Ttitle {
-	align-self: flex-start;
-	font-family: "Poppins";
-	font-style: normal;
-	font-weight: 600;
-	font-size: 1.5rem;
-	display: flex;
-	align-items: center;
+    align-self: flex-start;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
 
-	color: #ffffff;
+    color: #FFFFFF;
+
 }
 
 .Tbar {
-	padding: 10px;
-	width: 90%;
+    padding: 10px;
+    width: 90%;
 
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .bar-section {
-	background: rgba(15, 20, 27, 0.75);
-	border-radius: 30px;
-	color: white;
-	padding: 12px 20px;
-	transition: 300ms;
+    background: rgba(15, 20, 27, 0.75);
+    border-radius: 30px;
+    color: white;
+    padding: 12px 20px;
+    transition: 300ms;
 }
 
 .bar-section:hover {
-	background: #318ce7;
+    background: #318CE7;
 }
 
 .Tactive {
-	background: #318ce7;
+    background: #318CE7;
 }
 
 .basic {
-	margin: 5px;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	margin-top: 10px;
-	width: 90%;
+    margin: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 90%;
+
 }
 
 .brow {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
-	margin: 20px 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 20px 5px;
 }
 
 .input_field {
-	font-family: "Poppins";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.5rem;
-	border-radius: 5px;
-	margin: 3px 10px;
-	padding: 10px;
-	width: 45%;
-	height: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin: 3px 10px;
+    padding: 10px;
+    width: 45%;
+    height: 30px;
 }
 
 .dob {
-	margin-left: 15px;
-	margin-top: -10px;
-	margin-bottom: -20px;
-	font-family: "Poppins";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.2rem;
-	line-height: 48px;
-	display: flex;
-	align-items: center;
+    margin-left: 15px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
 
-	color: #ffffff;
+    color: #FFFFFF;
 }
 
 .text-area {
-	font-family: "Poppins";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.3rem;
-	border-radius: 5px;
-	margin: 3px 10px;
-	padding: 10px;
-	width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    margin: 3px 10px;
+    padding: 10px;
+    width: 100%;
 
-	height: 30px;
-	height: 100px;
+    height: 30px;
+    height: 100px;
 }
 
 .switch {
-	display: flex;
+    display: flex;
 
-	max-width: 300px;
-	width: 40%;
+    max-width: 300px;
+    width: 40%;
+
 }
 
 .ele {
-	width: 50%;
-	font-family: "Poppins";
-	padding: 5px;
-	text-align: center;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.4rem;
-	display: flex;
-	align-items: center;
-	color: #ffffff;
-	background: rgba(15, 20, 27, 0.75);
+
+    width: 50%;
+    font-family: 'Poppins';
+    padding: 5px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background: rgba(15, 20, 27, 0.75);
+
 }
 
 .Sactive {
-	background: #318ce7;
+    background: #318CE7;
 }
 
 .ele1 {
-	border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .ele2 {
-	border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .Stext {
-	width: 80%;
+    width: 80%;
 }
 
 .switchicon {
-	width: 20px;
-	object-fit: contain;
-	aspect-ratio: 1/2;
+    width: 20px;
+    object-fit: contain;
+    aspect-ratio: 1/2;
 }
 
 .next-btn {
-	margin-top: auto;
-	margin-top: 20px;
-	color: #ffffff;
-	font-family: "Poppins";
-	font-style: normal;
-	font-weight: 400;
 
-	font-size: 1.2rem;
-	padding: 10px 30px;
-	background: #318ce7;
-	border-radius: 10px;
+    margin-top: auto;
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+
+
+
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    background: #318CE7;
+    border-radius: 10px;
+
 }
 
 .drop-down {
-	display: none;
+    display: none;
 }
 
 .sub-title {
-	margin-left: 15px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-family: "Poppins";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.2rem;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
 
-	display: flex;
-	align-items: center;
-	color: #ffffff;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
 }
 
 .Etarea {
-	font-size: 1.2rem;
-	height: 140px;
+    font-size: 1.2rem;
+    height: 140px;
 }
 
 .Exparea {
-	height: 160px;
+    height: 160px;
 }
 
 .miscField {
-	width: 30%;
-	padding: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
-	text-align: center;
+    width: 30%;
+    padding: 20px;
+    font-size: 1.1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+
 }
 
 .center {
-	justify-content: center;
+    justify-content: center;
 }
 
 .inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+
 }
 
 .filetext {
-	background: rgba(15, 20, 27, 0.75);
-	border-radius: 30px;
-	font-family: "Poppins";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.2rem;
-	text-align: center;
-	padding: 5px 10px;
-	width: 50%;
-	margin: auto;
-	margin-top: 10px;
-	color: white;
+    background: rgba(15, 20, 27, 0.75);
+    border-radius: 30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5px 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+    color: white;
 }
 
 .Mtext1 {
-	font-family: "Poppins";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1.2rem;
-	line-height: 1.4rem;
-	text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: center;
 
-	color: #ffffff;
+
+
+    color: #FFFFFF;
+
+
 }
 
 .Aleft {
-	text-align: left;
-	padding: 5px;
-	margin-bottom: 10px;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 .ul-misc {
-	margin-left: 30px;
-	margin-top: 5px;
-	font-size: 1.1rem;
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 1.1rem;
 }
 
 .ol-misc {
-	margin-left: 15px;
+    margin-left: 15px;
 }
 
 .Cactive {
-	display: block;
+    display: block;
+}
+.drop-down
+{
+    display: none;
 }
 
 @media only screen and (max-width: 1200px) {
-	.Tback {
-		position: absolute;
-		padding: 20px 5px;
-		height: unset;
-	}
+    .Tback {
+     
+        padding: 20px 5px;
+        height: unset;
+    }
 
-	.Tlayout {
-		position: relative;
+    .Tlayout {
+        position: relative;
 
-		width: 90%;
-	}
+        width: 90%;
+    }
 
-	.brow {
-		flex-direction: column;
-		margin: 0px 5px;
-		justify-content: center;
-		align-items: center;
-	}
+    .brow {
+        flex-direction: column;
+        margin: 0px 5px;
+        justify-content: center;
+        align-items: center;
+    }
 
-	.input_field {
-		width: 90%;
-		margin: 10px 5px;
-	}
+    .input_field {
+        width: 90%;
+        margin: 10px 5px;
+    }
 
-	.switch {
-		margin: 10px 5px;
-		width: 90%;
-	}
+    .switch {
+        margin: 10px 5px;
+        ;
+        width: 90%;
 
-	.Stext {
-		font-size: 1rem;
-	}
+    }
 
-	.basic {
-		align-items: center;
-	}
+    .Stext {
+        font-size: 1rem;
+    }
 
-	.text-area {
-		width: 90%;
-	}
+    .basic {
+        align-items: center;
+    }
 
-	.Exparea {
-		width: 90%;
-		height: 190px;
-	}
+    .text-area {
 
-	.bar-section {
-		display: none;
-	}
+        width: 90%;
+    }
 
-	.drop-down {
-		display: block;
-	}
+    .Exparea {
+        width: 90%;
+        height: 190px;
+    }
+
+    .bar-section {
+        display: none;
+    }
+
+    .drop-down {
+        display: block;
+    }
 }

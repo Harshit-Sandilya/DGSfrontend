@@ -22,11 +22,10 @@
 }
 
 .rect {
-	height: 140vh;
+	height: 100%;
 	width: 0.4%;
 	max-width: 4px;
 	background: linear-gradient(#ffffff, #cbaf60, #cbaf60, #cbaf60, #cbaf60, #ffffff);
-
 	position: absolute;
 	left: 49.8%;
 	margin-left: -3px;
@@ -85,12 +84,16 @@
 .adimg {
 	width: 100%;
 	max-width: 300px;
+
 	margin: auto;
+	margin-top: 20px;
 }
 
 .section {
 	position: relative;
 	width: 50.2%;
+	display: flex;
+	flex-direction: column;
 }
 
 .content {
