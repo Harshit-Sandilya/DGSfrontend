@@ -6,6 +6,8 @@ import StuReg from './Pages/Registration/StuReg'
 import TeacherApp from './Pages/Registration/TeacherApp'
 import Admission from './Pages/Admission/Admission'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import Curri from './Pages/Curri&Cocurri/Curri'
+import Cocurri from './Pages/Curri&Cocurri/cocurri'
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
         <Route path="/studentregistration" element={<StuReg/>}/>
         <Route path="/teacherapplication" element={<TeacherApp/>}/>
         <Route path="/admissiondetails" element={<Admission/>}/>
+        <Route path="/curriculum" element={<Curri/>}/>
+        <Route path="/cocurri" element={<Cocurri/>}/>
+        
       </Routes>
     </Router>
   )
