@@ -8,6 +8,7 @@ import Admission from './Pages/Admission/Admission'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import Curri from './Pages/Curri&Cocurri/Curri'
 import Cocurri from './Pages/Curri&Cocurri/cocurri'
+import './App.css'
 
 function App() {
   return (

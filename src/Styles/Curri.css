@@ -142,6 +142,7 @@ color: #C35E88;
 font-style: normal;
 font-weight: 100;
 font-size: 1rem;
+transition: 100ms;
 
 display: flex;
 align-items: center;
@@ -159,3 +160,34 @@ color: #000000;
     font-size: 0.8rem;
     line-height: 20px;
 } */
+
+@media only screen and (max-width: 1000px) 
+{
+    .sidebar-curri
+    {
+        display: none;
+    }
+    .curri-img
+    {
+        display: none;
+    }
+    .section-text
+    {
+        width: 100%;
+        padding: 10px 10px;
+        font: 1rem;
+    }
+    .curri-content
+    {
+        width: 98%;
+    }
+    .curri-section
+    {
+        margin-top: 10px;
+    }
+    .head-content
+    {
+        font-size: 1rem;
+    }
+    
+}
