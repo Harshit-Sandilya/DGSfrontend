@@ -27,7 +27,7 @@ function Hostel() {
           <img src={hostel1} className="hostel1-img"></img>
         </div>
         </div>
-        <div className='Mid-line'>
+        <div className='Hostel-Mid-line'>
 
         </div>
      <div className='Hostel-footer'>

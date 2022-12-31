@@ -1,4 +1,4 @@
-.header{
+.uniform-header{
     width: 100%;
 height: 100px;
 
@@ -20,15 +20,15 @@ color: #C35E88;
 
  
 }
-.mainbody{
+.uniform-mainbody{
     width: 90%;
     display: flex;
     margin-left: 6em;
 }
-.col-1,.col-2 {
+.uniform-col-1,.uniform-col-2 {
  width: 50%;  
 }
-#img-1,#img-2{
+#unifrom-img-1,#uniform-img-2{
    
     border-radius: 15px 50px;
     background: #1F2937;
@@ -38,7 +38,7 @@ color: #C35E88;
    margin-top: -10px;
   
 }
-img{
+.uniform-subimg img {
  width: 75%;
  justify-content: center;
  align-items: center;
@@ -74,15 +74,15 @@ li{
     .mainbody{
         flex-direction: column;
     }
-    .col-1,.col-2{
+    .uniform-col-1,.uniform-col-2{
         width: 100%;
         margin-top: 5em;
         
     }
-    img{
+   .uniform-subimg img{
         margin-left: 0em;
     }
-    #img-1,#img-2{
+    #uniform-img-1,#uniform-img-2{
         height: 90vh;
     }
 }

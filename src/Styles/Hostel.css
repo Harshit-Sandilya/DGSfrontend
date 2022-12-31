@@ -1,3 +1,7 @@
+.Hostel{
+    width: auto;
+    justify-content: center;
+}
 .Hostel-upper{
     display: flex;
    
@@ -65,7 +69,7 @@ height: 300px;
 border-radius: 15px;
 }
 
-.Mid-line{
+.Hostel-Mid-line{
     /* width: 1363px; */
 height: 0px;
 left: 32px;
@@ -76,9 +80,13 @@ border: 4px solid rgba(0, 0, 0, 0.5);
 transform: rotate(0deg);
 
 }
+.Hostel-footer{
+    width: 80%;
+}
 .Hostel-mid-1{
     display: flex;
     width: 95%;
+    
 }
 .Hostel-mid-1-left{
     width: 30%;

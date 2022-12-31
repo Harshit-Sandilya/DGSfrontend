@@ -54,7 +54,7 @@ function Scholarship(){
   {/* <a href="/"></a> */}
 <div className="main-body-col1">
 
-  <img src="https://tse1.mm.bing.net/th?id=OIP.fnOsC7y52wqH1T62oQYWAgHaDR&pid=Api&P=0" alt="Snow" className="img1"/>
+  <img src="https://tse1.mm.bing.net/th?id=OIP.fnOsC7y52wqH1T62oQYWAgHaDR&pid=Api&P=0" alt="Snow" className="scholar-img"/>
   {/* <div class="bottom-left">Bottom Left</div>
   <div class="top-left">Top Left</div>
   <div class="top-right">Top Right</div>
@@ -64,7 +64,7 @@ function Scholarship(){
 </div>
 
 <div className="main-body-col2">
-<img src="https://tse1.mm.bing.net/th?id=OIP.fnOsC7y52wqH1T62oQYWAgHaDR&pid=Api&P=0" alt="Snow" className="img1"/>
+<img src="https://tse1.mm.bing.net/th?id=OIP.fnOsC7y52wqH1T62oQYWAgHaDR&pid=Api&P=0" alt="Snow" className="scholar-img"/>
   {/* <div class="bottom-left">Bottom Left</div>
   <div class="top-left">Top Left</div>
   <div class="top-right">Top Right</div>
