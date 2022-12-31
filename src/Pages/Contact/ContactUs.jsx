@@ -40,9 +40,9 @@ export default function ContactUs() {
 					<div className="contact-info-section">
 						<img src={call} className="contact-info-img"></img>
 						<div className="contact-info-text">
-							<p>Call us at:</p>
-							<p>+91-9314011566</p>
-							<p>01594-253561</p>
+							<p className="conatct-info-text">Call us at:</p>
+							<p className="conatct-info-text">+91-9314011566</p>
+							<p className="conatct-info-text">01594-253561</p>
 						</div>
 					</div>
 					<div className="contact-info-section">
