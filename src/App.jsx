@@ -12,7 +12,7 @@ import AboutUs from "./Pages/About/AboutUs";
 import Curri from "./Pages/Curri&Cocurri/Curri";
 import Cocurri from "./Pages/Curri&Cocurri/cocurri";
 import Hostel from "./Components/Hostel";
-import Scholarship from "./Components/Scholarship";
+import Scholarship from "./Pages/Scholarships/Scholarships";
 import Location from "./Components/Location";
 import Calender from "./Components/Calender";
 import Uniform from "./Components/Uniform";
