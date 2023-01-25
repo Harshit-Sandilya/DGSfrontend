@@ -1,0 +1,91 @@
+.scholar-header{
+    width: 100%;
+height: 100px;
+
+
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+margin-top: 7rem;;
+line-height: 100%;
+/* display: flex;
+align-items: center;
+text-align: center; */
+text-decoration-line: underline;
+/* text-transform: uppercase; */
+
+color: #C35E88;
+
+
+}
+.scholar-mainbody{
+    display: flex;
+    margin-top: 5rem;
+}
+
+  .main-body-col1, .main-body-col2{
+   
+    /* width: 600px;
+height: 600px; */
+
+height: 100%;
+margin-left: 2em;
+opacity: 70%; 
+border-radius: 10px;
+  }
+ 
+  .scholar-img{
+   width: 90%;
+    height: 400px;
+    
+    position: relative;
+    
+
+  }
+  #motto1 {
+    position: absolute;
+    bottom: 26%;
+    right: 68%;
+    font-size: 2vw;
+    /** responsive font-size **/
+  }
+  #motto2 {
+    position: absolute;
+    bottom: 26%;
+    right: 20%;
+    font-size: 2vw;
+    /** responsive font-size **/
+  }
+ .main-body-col2:hover{
+    opacity: 100%;
+  }
+  .main-body-col1:hover{
+    opacity: 100%;
+  }
+  @media (max-width:600px) {
+    .scholar-mainbody{
+        flex-direction: column;
+    }
+    .main-body-col1,.main-body-col2{
+        width: 100%;
+    }
+    .scholar-img{
+        width: 100%;
+        justify-content: center;
+    }
+    #motto1{
+        position: absolute;
+        bottom: 26%;
+        right: 60%;
+        font-size: 2vw; 
+    }
+    #motto2{
+        position: absolute;
+    bottom: 60%;
+    right: 60%;
+    font-size: 2vw;
+    }
+    
+  }

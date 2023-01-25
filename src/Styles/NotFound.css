@@ -1,0 +1,42 @@
+.nf-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+	margin-top: 15vh;
+}
+.nf-number {
+	font-family: "Oswald", sans-serif;
+	font-size: 4rem;
+	font-weight: 600;
+	color: #c35e88;
+}
+.nf-message {
+	font-family: "Oswald", sans-serif;
+	font-size: 3rem;
+	font-weight: 400;
+	opacity: 0.5;
+	margin-left: 10px;
+}
+.nf-redirect {
+	min-width: 300px;
+	width: 20vw;
+	margin-top: 3vh;
+	background-color: #318ce7;
+	min-height: 75px;
+	height: 5vw;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.nf-link {
+	text-decoration: none;
+	font-size: 2rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	color: white;
+}

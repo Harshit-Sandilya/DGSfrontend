@@ -15,7 +15,7 @@ export default function RegOption(){
         <div>
             <div className="option-container">
                 <div className="curr" onMouseEnter={()=>{setOnStu(true)}} onMouseLeave={()=>{setOnStu(false)}}>
-                    {onStu && <Link to="#" className="cover-link">
+                    {onStu && <Link to="/curriculum" className="cover-link">
                         <div className="cover">
                             <div className="cover-text">Curriculum</div>
                             <div className="cover-arrow">
@@ -25,7 +25,7 @@ export default function RegOption(){
                     </Link>}
                 </div>
                 <div className="co-curr" onMouseEnter={()=>{setOnTea(true)}} onMouseLeave={()=>{setOnTea(false)}}>
-                    {onTea && <Link to="#" className="cover-link">
+                    {onTea && <Link to="/cocurri" className="cover-link">
                         <div className="cover">
                             <div className="cover-text">Co-Curriculur</div>
                             <div className="cover-arrow">
