@@ -18,7 +18,7 @@
 }
 .form-container {
 	width: 70vw;
-	background: rgba(31, 41, 55, 0.75);
+	background: rgba(31, 41, 55, 0.85);
 	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
 	display: flex;
@@ -54,9 +54,10 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	width: 60vw;
 	margin-bottom: 15px;
+	gap: 20px;
 }
 .row5 {
 	justify-content: flex-start;
@@ -64,13 +65,13 @@
 .row4 {
 	flex-direction: row-reverse;
 }
-.text-input {
+.student-text-input {
 	text-decoration: none;
 	outline: none;
 	border: none;
-	min-height: 2rem;
+	height: 2rem;
 	width: 25vw;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: row;
@@ -81,13 +82,13 @@
 	font-weight: 400;
 	margin: 2px;
 }
-.text-input:focus {
+.student-text-input:focus {
 	text-decoration: none;
 	border: none;
 	outline: none;
-	min-height: 2rem;
+	height: 2rem;
 	width: 25vw;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: row;
@@ -99,15 +100,18 @@
 	border: 2px solid #32bef2;
 	margin: 0px;
 }
+.row1 > .student-text-input {
+	width: 20vw;
+}
 .class-input {
 	text-decoration: none;
 	outline: none;
 	border: none;
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
-	font-size: 1.5rem;
-	min-height: 2rem;
-	width: 10vw;
+	font-size: 1rem;
+	height: 2rem;
+	width: 5vw;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: row;
@@ -118,10 +122,14 @@
 	font-family: "Poppins", sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
+	line-height: 1rem;
 	margin-bottom: 5px;
 	margin-left: 10px;
 	margin-right: 20px;
 	color: white;
+}
+.row1 > .labels {
+	font-size: 0.7rem;
 }
 .address {
 	resize: none;
@@ -203,12 +211,12 @@
 	.form-body {
 		width: 70vw;
 	}
-	.text-input {
+	.student-text-input {
 		width: 60vw;
 		margin: 2px;
 		margin-bottom: 22px;
 	}
-	.text-input:focus {
+	.student-text-input:focus {
 		width: 60vw;
 		margin-bottom: 20px;
 	}

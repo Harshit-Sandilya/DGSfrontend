@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function StuReg() {
 	const [formData, setFormData] = React.useState({
 		fullname: "",
+		email: "",
 		class: "",
 		fathername: "",
 		mothername: "",
@@ -30,6 +31,7 @@ export default function StuReg() {
 		console.log(formData);
 		setFormData({
 			fullname: "",
+			email: "",
 			class: "",
 			fathername: "",
 			mothername: "",
@@ -52,11 +54,21 @@ export default function StuReg() {
 						<div className="row1">
 							<div className="name">
 								<input
-									className="text-input"
+									className="student-text-input"
 									name="fullname"
 									placeholder="Full Name"
 									type="text"
 									value={formData.fullname}
+									onChange={(event) => handleChange(event)}
+								></input>
+							</div>
+							<div className="student-email">
+								<input
+									className="student-text-input"
+									name="email"
+									placeholder="Email"
+									type="email"
+									value={formData.email}
 									onChange={(event) => handleChange(event)}
 								></input>
 							</div>
@@ -85,7 +97,7 @@ export default function StuReg() {
 						<div className="row2">
 							<div className="father-name">
 								<input
-									className="text-input"
+									className="student-text-input"
 									name="fathername"
 									placeholder="Father's Name"
 									type="text"
@@ -95,7 +107,7 @@ export default function StuReg() {
 							</div>
 							<div className="mother-name">
 								<input
-									className="text-input"
+									className="student-text-input"
 									name="mothername"
 									placeholder="Mother's Name"
 									type="text"
@@ -105,12 +117,12 @@ export default function StuReg() {
 							</div>
 						</div>
 						<div className="row3">
-							<div className="dob">
+							<div className="student-dob">
 								<label htmlFor="dob" className="labels">
 									Date of Birth
 								</label>
 								<input
-									className="text-input"
+									className="student-text-input"
 									name="dob"
 									placeholder="dd/mm/yyyy"
 									type="text"
@@ -123,7 +135,7 @@ export default function StuReg() {
 									Phone Number
 								</label>
 								<input
-									className="text-input"
+									className="student-text-input"
 									name="phone"
 									placeholder="+91XXXXXXXXXX"
 									type="text"
@@ -149,7 +161,7 @@ export default function StuReg() {
 										WhatsApp Number
 									</label>
 									<input
-										className="text-input"
+										className="student-text-input"
 										name="whatsapp"
 										placeholder="+91XXXXXXXXXX"
 										type="text"

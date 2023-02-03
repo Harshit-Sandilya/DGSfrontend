@@ -52,9 +52,9 @@ export default function Home() {
 						<div className="media-head">MEDIA</div>
 						<div className="media-body">
 							<div className="news-1"></div>
-							<div className="news-2"></div>
-							<div className="news-3"></div>
-							<div className="news-4"></div>
+							{/* <div className="news-2"></div> */}
+							{/* <div className="news-3"></div> */}
+							{/* <div className="news-4"></div> */}
 						</div>
 					</div>
 				</div>
