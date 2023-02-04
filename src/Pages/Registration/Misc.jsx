@@ -1,6 +1,7 @@
 import React from "react";
 
-function Misc() {
+function Misc(props) {
+	const {data,modifyData}=props;
 	return (
 		<div className="basic">
 			<div className="brow center">
@@ -8,8 +9,9 @@ function Misc() {
 					type="text"
 					className="input_field miscField"
 					placeholder={"Last Salary Drawn"}
+					onChange={(e)=>{modifyData('lastSalary',e.target.value)}}
 				></input>
-				<input className="input_field miscField" placeholder={"Expected Salary"}></input>
+				<input className="input_field miscField" placeholder={"Expected Salary"} onChange={(e)=>{modifyData('expected',e.target.value)}}></input>
 			</div>
 
 			<div className="Mtext1">

@@ -27,7 +27,7 @@ function App() {
 				<Route path="/activites" element={<CurOption />} />
 				{/* <Route path="/joinus" element={<RegOption />} /> */}
 				<Route path="/studentregistration" element={<StuReg />} />
-				{/* <Route path="/teacherapplication" element={<TeacherApp />} /> */}
+				<Route path="/teacherapplication" element={<TeacherApp />} />
 				<Route path="/admissiondetails" element={<Admission />} />
 				<Route path="/rules" element={<Rules />} />
 				<Route path="/contactus" element={<ContactUs />} />

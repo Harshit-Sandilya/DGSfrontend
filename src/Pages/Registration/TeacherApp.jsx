@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../Styles/TeacherApp.css";
 import tback from "../../Images/Registration/bacground.jpg";
 
@@ -9,11 +9,19 @@ import Misc from "./Misc";
 import DropDown from "./Bar";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import { postTeacher } from "../../api";
 
 function Tapplication() {
 	const [isActive, setActive] = useState(0);
-	const [gender, setgender] = useState("female");
-	const [married, setmarried] = useState("unmarried");
+	const [data,setData]=useState({married:'unmarried',gender:'female',experience:[]});
+	const modifyData=(field,value)=>{
+		setData({...data, [field]:value});
+	}
+	const handleSubmit=()=>{
+	 postTeacher(data);
+		
+	}
+	 console.log(data)
 	return (
 		<div>
 			<div className="space-top"></div>
@@ -62,15 +70,22 @@ function Tapplication() {
 						{
 							0: (
 								<Basic
-									gender={gender}
-									setgender={setgender}
-									married={married}
-									setmarried={setmarried}
+								data={data}
+								setData={setData}
+								modifyData={modifyData}
 								/>
 							),
-							1: <Education />,
-							2: <Experience />,
-							3: <Misc />,
+							1: <Education 
+							data={data}
+								setData={setData}
+								modifyData={modifyData}
+							/>,
+							2: <Experience data={data}
+							setData={setData}
+							modifyData={modifyData}/>,
+							3: <Misc 	data={data}
+							setData={setData}
+							modifyData={modifyData}/>,
 						}[isActive]
 					}
 
@@ -78,6 +93,7 @@ function Tapplication() {
 						className="next-btn"
 						onClick={() => {
 							if (isActive !== 3) setActive(isActive + 1);
+							else handleSubmit();
 						}}
 					>
 						{isActive !== 3 ? "Next" : "Agree and Continue"}
