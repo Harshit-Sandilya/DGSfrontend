@@ -25,7 +25,7 @@ function App() {
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route path="/activites" element={<CurOption />} />
-				{/* <Route path="/joinus" element={<RegOption />} /> */}
+				<Route path="/joinus" element={<RegOption />} />
 				<Route path="/studentregistration" element={<StuReg />} />
 				<Route path="/teacherapplication" element={<TeacherApp />} />
 				<Route path="/admissiondetails" element={<Admission />} />
