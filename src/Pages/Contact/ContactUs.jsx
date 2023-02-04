@@ -1,10 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
 import "../../Styles/ContactUs.css";
 import call from "../../Images/Home/contact_phone_FILL1_wght400_GRAD0_opsz48.png";
 import mail from "../../Images/Home/contact_mail_FILL1_wght400_GRAD0_opsz48.png";
+import { postContact } from "../../api";
 
 export default function ContactUs() {
 	const [formData, setFormData] = React.useState({
@@ -13,7 +13,6 @@ export default function ContactUs() {
 		subject: "",
 		body: "",
 	});
-	const navigate = useNavigate();
 	function handleChange(e) {
 		setFormData((prev) => {
 			return {
@@ -22,16 +21,41 @@ export default function ContactUs() {
 			};
 		});
 	}
+	function checkQuery(query) {
+		const em = /^[\w.+\-]+@gmail\.com$/;
+		const al = /^[A-Za-z]+$/;
+		if (query.fullname === "") {
+			window.alert("Please enter your fullname");
+			return false;
+		}
+		if (!al.test(query.fullname)) {
+			window.alert("Please enter your correct fullname");
+			return false;
+		}
+		if (query.email === "") {
+			window.alert("Please enter your email address");
+			return false;
+		}
+		if (!em.test(query.email)) {
+			window.alert("Please enter a valid email address");
+			return false;
+		}
+		if (query.subject === "") {
+			window.alert("Please enter a subject");
+			return false;
+		}
+		if (query.body === "") {
+			window.alert("Please fill out the details");
+			return false;
+		}
+		return true;
+	}
 	function handleSubmit() {
+		if (!checkQuery(formData)) return;
 		console.log(formData);
-		setFormData({
-			fullname: "",
-			email: "",
-			subject: "",
-			body: "",
-		});
-		alert("Application Submitted\nWe shall contact you soon...");
-		navigate("/", { replace: true });
+		postContact(formData);
+		window.alert("We shall contact you soon");
+		setFormData({ fullname: "", email: "", subject: "", body: "" });
 	}
 	return (
 		<div>

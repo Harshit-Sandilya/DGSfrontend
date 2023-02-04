@@ -6,9 +6,9 @@ import JoinUs from "../../Components/JoinUs";
 import Events from "../../TestData/Events";
 
 export default function Home() {
-	const eventsDisp = Events.map((x) => {
+	const eventsDisp = Events.map((x, i) => {
 		return (
-			<div className="event-list-item">
+			<div className="event-list-item" key={i}>
 				<div className="event-list-info">{x}</div>
 				<div className="event-list-seprator"></div>
 			</div>
@@ -21,12 +21,12 @@ export default function Home() {
 				<div className="hero">
 					<div className="image"></div>
 					<div className="about">
-						Dundlod Girls School is an English Medium All-Girls’ Boarding School
-						projected to be CBSE affiliated and is managed by “DUNDLOD SHIKSHAN
-						SANSTHAN, DUNDLOD”. The school runs classes from III to VIII with a proposed
-						expansion to Senior Secondary Level. The campus is situated in a lush green,
-						pollution free locality near the heritage city of Dundlod. It is 2 hours
-						journey from Jaipur & 4 hours from Delhi. The nearest Airport is Jaipur
+						DGS is an English Medium All-Girls' Boarding School projected to be CBSE
+						affiliated and is managed by “DUNDLOD SHIKSHAN SANSTHAN, DUNDLOD”. The
+						school runs classes from III to VIII with a proposed step-wise expansion to
+						the Senior Secondary Level. The campus is situated in a lush green,
+						pollution-free locality near the heritage city of Dundlod. It is 2 hour
+						journey from Jaipur & 4 hours from Delhi. The nearest airport is Jaipur
 						International Airport.
 					</div>
 				</div>
@@ -35,8 +35,8 @@ export default function Home() {
 					<p className="home-vision-body">
 						To provide a platform and an environment to each girl child that can
 						encourage fearless intellectual curiosity, and an uncompromising sense of
-						fair play empower girls to be future leaders with a global perspective and
-						Indian ethos.To ensure integrated quality education and all-around
+						fair play empowering girls to be future leaders with a global perspective
+						and Indian ethos. To ensure integrated quality education and all-around
 						development of students in a safe, respectful and inclusive environment with
 						excellent faculty that promises to build a foundation for life-long
 						learning.
