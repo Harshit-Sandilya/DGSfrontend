@@ -1,0 +1,230 @@
+/* .Hostel{
+    width: auto;
+    justify-content: center;
+} */
+
+.Hostel-upper{
+    display: flex;
+    margin-left: 3%;
+    width: 95%;
+    margin-top: 2em;
+    display: flex;
+}
+.Hostel h3{
+  margin-top: 1.5em;  
+width: 95%;
+height: 100px;
+
+
+/* left: 32px;
+top: 264px; */
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 700;
+font-size: 70px;
+line-height: 104px;
+
+align-items: center;
+text-align: center;
+text-decoration-line: underline;
+text-transform: uppercase;
+
+color: #C35E88;
+}
+.Hostel-upper-left{
+    width: 50%;
+    height: 348px;
+}
+.Hostel-upper-left p{
+   
+
+
+
+/* left: 32px;
+top: 311px; */
+margin-top: 2em;
+font-family: 'Poppins';
+font-style: normal;
+font-size: 20em;
+font-size: 25px;
+line-height: 35px;
+
+color: #000000;
+
+}
+.Hostel-upper-right{
+    width: 50%;
+    height: 300px;
+}
+.hostel1-img img{
+    width: 100%;
+height: 300px;
+
+
+
+
+border-radius: 15px;
+}
+
+.Hostel-Mid-line{
+    /* width: 1363px; */
+height: 0px;
+left: 32px;
+top: 774.11px;
+margin-top: 5em;
+margin-bottom: 3em;
+
+border: 4px solid rgba(0, 0, 0, 0.5);
+transform: rotate(0deg);
+
+}
+.Hostel-footer{
+    width: 80%;
+    margin-left: 5em;
+}
+.Hostel-mid-1{
+    display: flex;
+    width: 95%;
+    
+}
+.Hostel-mid-1-left{
+    width: 34%;
+    margin-top: 0.5em;
+}
+.Hostel-mid-1-left img{
+width: 100%;
+height: 300px;
+border-radius: 5px;
+margin-top: 1em;
+}
+.Hostel-mid-1-right{
+    width: 60%;
+height: 300px;
+background: rgba(31, 41, 55, 0.9);
+border-radius: 0px 10px 10px 0px;
+margin-top: 1.5em;
+margin-left: 1.2em;
+}
+.Hostel-mid-2{
+    display: flex;
+    width: 95%;
+}
+.Hostel-mid-2-left{
+    width: 60%;
+height: 300px;
+background: rgba(31, 41, 55, 0.9);
+border-radius: 10px 0px 0px 10px;
+margin-left: 1.5em;
+margin-top: 1.4em;
+}
+.Hostel-mid-2-right{
+    width: 30%;
+    margin-top: 0.9em;
+}
+.Hostel-mid-2-right img{
+    width: 95%;
+height: 300px;
+border-radius: 0px 10px 10px 0px;
+margin-left: 0em;
+margin-top: 0.5em;
+}
+.Hostel-mid-3{
+    display: flex;
+    width: 95%;
+}
+.Hostel-mid-3-left{
+    width: 33%;
+    margin-top: 0.2em;
+}
+.Hostel-mid-3-left img{
+    width: 100%;
+height: 300px;
+margin-left: 1.4em;
+border-radius: 10px 0px 0px 10px;
+}
+.Hostel-mid-3-right{
+    width: 60%;
+    height: 300px;
+    background: rgba(31, 41, 55, 0.9);
+    border-radius: 0px 10px 10px 0px; 
+    margin-top: 1.4em;
+    margin-left: 1.4em;
+}
+.Hostel-mid-4{
+    display: flex;
+    width: 95%;
+}
+.Hostel-mid-4-left{
+    width: 60%;
+height: 300px;
+background: rgba(31, 41, 55, 0.9);
+border-radius: 10px 0px 0px 10px;
+margin-left: 1.4em;
+margin-top: 1.4em;
+}
+.Hostel-mid-4-right{
+    width: 30%;
+    margin-top: 0.3em;
+}
+.Hostel-mid-4-right img{
+    width: 100%;
+height: 300px;
+margin-left: -0.1em;
+
+border-radius: 0px 10px 10px 0px;
+}
+.Hostel-mid-1-right p{
+    margin: 0.6em;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.Hostel-mid-2-left p{
+    margin: 0.6em;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.Hostel-mid-3-right p{
+    margin: 0.6em;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.Hostel-mid-4-left p{
+    margin: 0.6em;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+@media (max-width:600px) {
+    .Hostel-upper{
+        flex-direction: column;
+        width: 100%;
+    }
+    .Hostel-upper-left p{
+        width: 100%;
+       
+    }
+    .hostel1-img img{
+        width: 90%;
+        justify-content: center;
+    }
+    .Hostel-mid-1,.Hostel-mid-2,.Hostel-mid-3,.Hostel-mid-4{
+        flex-direction: column;
+        width: 100%;
+    }
+    .Hostel-mid-1-left,.Hostel-mid-1-right,.Hostel-mid-2-left,.Hostel-mid-2-right,.Hostel-mid-3-left,.Hostel-mid-3-right
+    ,.Hostel-mid-4-left,.Hostel-mid-4-right{
+        width: 100%;
+    }
+}
