@@ -1,40 +1,43 @@
 import React from "react";
 import "../../Styles/AboutUs.css";
-import secratary from "../../Images/About/sec-dps.jpg";
+import principal from "../../Images/About/sec-dps.jpg";
 
 export default function Page2() {
 	return (
 		<div className="about-message-container">
 			<div className="about-msg-leaflet">
 				<div className="about-leaflet-img">
-					<img src={secratary} className="about-leaflet-img" />
+					<img src={principal} className="about-leaflet-img" />
 				</div>
-				<div className="about-leaflet-name">-Mr B L Ranwa</div>
+				<div className="about-leaflet-name">-Shipra Sharma </div>
 			</div>
 			<div className="about-msg-content">
-				<div className="about-content-header">
-					"Education is to equip young minds with tools to soar high and think beyond
-					thinking."
-				</div>
+				<div className="about-content-header"></div>
 				<div className="about-content-body">
-					Education is essential for every individual. Without education no country can
-					prosper and vie with the challenges that lie ahead in the rapidly growing
-					globalised economy. Education enables one to realize one's talents and
-					understand one's responsibilities to propel one's personal growth and to make
-					one a worthy citizen. Over the past decade, the environment of education has
-					dramatically changed. We now live in an era where a critical understanding of
-					the global dimensions to learning and development of students as global citizens
-					are gaining importance. Quality education system encompassing quality pedagogy
-					is vital for achieving success in the global arena. At the same time locating a
-					quality service provider is critical in attaining success. In an attempt to
-					provide quality service, Dundlod Girls’ School strives hard to generate good
-					citizens. Besides, DGS inculcates the social and moral values in the students
-					and ignites their minds to perform their best. DGS firmly believes in adherence
-					to values that are most relevant to the academic community, anchored on the
-					concept of integrity. DGS is centre of excellence and aims to dedicate itself
-					fully to meet the vision of India by transforming students into highly talented
-					individuals with commitment, unity and patriotism. I whole heartedly welcome
-					everyone whoever seeks admission to DGS and wish them for their bright future.
+					In today's scenario, children live in a world where values are changing fast. So
+					we have to recognize the importance of aesthetics and strive hard for the
+					student's mental and spiritual development. Nothing can be taken for granted
+					that makes students responsible and sensible human beings who have much to
+					contribute towards the growth of society and the nation. DGS fraternity welcomes
+					every new productive association with the school. DUNDLOD GIRLS' SCHOOL
+					Balwantpura is a temple of learning that radiates knowledge and excellence for
+					the pupils who come here to grow and develop. The holistic development in the
+					salubrious environs of the huge campus brings each innocent heart closer to
+					nature in a melodious song of unison. Academic excellence is a must-do on our
+					priority list, while we encompass the core with a strong value system that shall
+					sustain these young minds in the journey of their lives. We strengthen their
+					foundations with the bulwark of our Indian culture and tradition but teach
+					changes with an open, yet, discerning mind. them to embrace progressive Every
+					girl who steps into this veritable wonderland of rambling paths, trees, flowers,
+					and exotic birds gets to enjoy best of both the world's privacy and peace
+					combined with modern links. She celebrates diversity in the learning environment
+					which promotes independent thinkers with a happy mind and compassion towards
+					other beings. She understands that she needs to compete with herself by
+					stretching her boundaries, rather competing with others to be successful and
+					attain excellence in life. She must aspire to attain new heights, not for the
+					world to see her at the top rather for her to see the world from the top. I am
+					confident enough that the DGS will make every new entity stronger day by day,
+					adding a new leaf to the grandeur of the school.
 				</div>
 			</div>
 		</div>

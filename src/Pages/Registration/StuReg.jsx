@@ -3,8 +3,7 @@ import React from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router-dom";
-import { postTeacher } from "../../api";
-//require("dotenv").config();
+import { postStudent } from "../../api";
 
 export default function StuReg() {
 	const [formData, setFormData] = React.useState({
@@ -22,7 +21,6 @@ export default function StuReg() {
 	const navigate = useNavigate();
 
 	function handleChange(e) {
-		console.log(formData.iswhatsapp);
 		setFormData((prev) => {
 			return {
 				...prev,
@@ -30,27 +28,52 @@ export default function StuReg() {
 			};
 		});
 	}
+	function isValid(data) {
+		let keys = Object.keys(data);
+		const em = /^[\w.+\-]+@gmail\.com$/;
+		const al = /^[A-Za-z]+$/;
+		const dt =
+			/^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]|(?:Jan|Mar|May|Jul|Aug|Oct|Dec)))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2]|(?:Jan|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)(?:0?2|(?:Feb))\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9]|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep))|(?:1[0-2]|(?:Oct|Nov|Dec)))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/;
+		const ph = /^\+\d{12}$/;
+		for (let i = 0; i < keys.length; i++) {
+			if (data[keys[i]] === "") {
+				window.alert("Please enter " + keys[i]);
+				return false;
+			}
+		}
+		if (!al.test(data.fullname) || !al.test(data.fathername) || !al.test(data.mothername)) {
+			window.alert("Names should be alphabets");
+			return false;
+		}
+		if (!em.test(data.email)) {
+			window.alert("Please enter valid email");
+			return false;
+		}
+		if (!dt.test(data.date)) {
+			window.alert("Please enter valid date format (dd-mm-yyyy;dd.mm.yyyy;dd/mm/yyyy)");
+			return false;
+		}
+		if (!ph.test(data.phone)) {
+			window.alert("Please enter valid phone number");
+			return false;
+		}
+		if (!ph.test(data.whatsapp)) {
+			window.alert("Please enter valid phone number");
+			return false;
+		}
+		return true;
+	}
 	function handleSubmit() {
-		if (formData.iswhatsapp)
-			setFormData({
-				...formData,
-				whatsapp: formData.phone,
-			});
-		postTeacher(formData);
-		//console.log(`${process.env.BACKEND}studentReg`);
-
-		setFormData({
-			fullname: "",
-			email: "",
-			class: "",
-			fathername: "",
-			mothername: "",
-			dob: "",
-			phone: "",
-			iswhatsapp: true,
-			whatsapp: "",
-			address: "",
-		});
+		let sendData = formData;
+		if (sendData.iswhatsapp)
+			sendData = {
+				...sendData,
+				whatsapp: sendData.phone,
+			};
+		if (!isValid(sendData)) return;
+		alert("Passed");
+		console.log(sendData);
+		postStudent(sendData);
 		navigate("/", { replace: true });
 	}
 
@@ -133,7 +156,7 @@ export default function StuReg() {
 								<input
 									className="student-text-input"
 									name="dob"
-									placeholder="dd/mm/yyyy"
+									placeholder="dd.mm.yyyy"
 									type="text"
 									value={formData.dob}
 									onChange={(event) => handleChange(event)}

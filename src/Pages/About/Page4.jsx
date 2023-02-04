@@ -30,11 +30,13 @@ export default function Page4() {
 						<img src={dundlod} className="about-tile-image" />
 					</div>
 					<div className="about-tile-text">
-						Praesent sed nisl posuere, tempus velit vel, auctor nulla. Aenean ac neque
-						lorem. Maecenas lacinia ligula neque, non tempus nisi pharetra et. Etiam in
-						felis in nisl pretium rutrum et ac metus. Phasellus vehicula quam eu
-						fermentum ullamcorper. Fusce fringilla non enim efficitur consequat.
-						Phasellus vel enim vestibulum, mattis erat.
+						Dundlod Public School for Excellence. Since our establishment, we have been
+						continuously honoured with the first prize in both Independence Day and the
+						Republic Day parade held at headquarter confirming our belief in building
+						disciplined and decent citizens. Given our unique process of imparting
+						education and inculcating good manners and etiquette in our students, we
+						have been every now and then felicitated by local administration reflecting
+						our stress on working at grass root.
 					</div>
 				</div>
 				{over.dundlod && (
@@ -58,11 +60,14 @@ export default function Page4() {
 						<img src={jhunjhunu} className="about-tile-image" />
 					</div>
 					<div className="about-tile-text">
-						Praesent sed nisl posuere, tempus velit vel, auctor nulla. Aenean ac neque
-						lorem. Maecenas lacinia ligula neque, non tempus nisi pharetra et. Etiam in
-						felis in nisl pretium rutrum et ac metus. Phasellus vehicula quam eu
-						fermentum ullamcorper. Fusce fringilla non enim efficitur consequat.
-						Phasellus vel enim vestibulum, mattis erat.
+						Aching for an institution that people can claim its own and genuine, the
+						school management ,in an earnest endeavor, tries to seek all possible means
+						to give a platform to its students for their self-exposure which in return
+						paves a way for their self and independent growth. Jhunjhunu School strives
+						hard to cash on the co-curricular activities that are within its access so
+						as to have a glittering collection of memoir. Be it school, district, state
+						or national level, it undoubtedly avails itself of these activities and
+						students bring laurels to school.
 					</div>
 				</div>
 				{over.jhunjhunu && (

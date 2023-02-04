@@ -32,4 +32,16 @@ function postStudent(data) {
     });
 }
 
-export { postTeacher, postStudent };
+function postContact(data) {
+	console.log(data);
+	fetch(`${API_URL}contact`, {
+		method: "POST",
+		headers: { "Content-Type": "application/json" },
+		body: JSON.stringify(data),
+	})
+		.then((response) => response.json())
+		.then((value) => console.log(value))
+		.catch((err) => console.log(err));
+}
+
+export { postTeacher, postStudent, postContact };
