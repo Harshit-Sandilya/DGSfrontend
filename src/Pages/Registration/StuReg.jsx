@@ -3,6 +3,9 @@ import React from "react";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { postTeacher } from "../../api";
+//require("dotenv").config();
 
 export default function StuReg() {
 	const [formData, setFormData] = React.useState({
@@ -20,6 +23,7 @@ export default function StuReg() {
 	const navigate = useNavigate();
 
 	function handleChange(e) {
+		console.log(formData.iswhatsapp);
 		setFormData((prev) => {
 			return {
 				...prev,
@@ -28,7 +32,14 @@ export default function StuReg() {
 		});
 	}
 	function handleSubmit() {
-		console.log(formData);
+		if (formData.iswhatsapp)
+			setFormData({
+				...formData,
+				whatsapp: formData.phone,
+			});
+		postTeacher(formData);
+		//console.log(`${process.env.BACKEND}studentReg`);
+
 		setFormData({
 			fullname: "",
 			email: "",
@@ -41,7 +52,6 @@ export default function StuReg() {
 			whatsapp: "",
 			address: "",
 		});
-		alert("Application Submitted\nWe shall contact you soon...");
 		navigate("/", { replace: true });
 	}
 
