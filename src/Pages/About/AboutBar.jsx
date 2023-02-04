@@ -18,16 +18,16 @@ export default function AboutBar(props) {
 					props.change(2);
 				}}
 			>
-				Secratary Message
+				Principal Message
 			</div>
-			<div
+			{/* <div
 				className={`about-bar-${props.page === 3 ? "active" : "inactive"}`}
 				onClick={() => {
 					props.change(3);
 				}}
 			>
 				Principal Message
-			</div>
+			</div> */}
 			<div
 				className={`about-bar-${props.page === 4 ? "active" : "inactive"}`}
 				onClick={() => {
