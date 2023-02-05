@@ -1,6 +1,7 @@
 {
 	"name": "school",
 	"version": "0.1.0",
+	"homepage": "https://dgs-frontend.vercel.app/",
 	"private": true,
 	"dependencies": {
 		"@headlessui/react": "^1.7.7",
