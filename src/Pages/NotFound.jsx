@@ -20,7 +20,7 @@ export default function NotFound() {
 						navigate("/", { replace: true });
 					}}
 				>
-					<Link className="nf-link">Go to Home</Link>
+					<Link className="nf-link" to="/">Go to Home</Link>
 				</div>
 			</div>
 			<Navbar />

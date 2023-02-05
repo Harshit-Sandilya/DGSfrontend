@@ -34,43 +34,43 @@ export default function Navbar(props) {
 			</div>
 			<div className="pages" id="menu-list">
 				<Link
-					to={props.page == "Home" ? null : "/"}
+					to={"/"}
 					className={props.page == "Home" ? "active" : "page-links"}
 				>
 					Home
 				</Link>
 				<Link
-					to={props.page == "About" ? null : "/aboutus"}
+					to={ "/aboutus"}
 					className={props.page == "About" ? "active" : "page-links"}
 				>
 					About us
 				</Link>
 				<Link
-					to={props.page == "Activities" ? null : "/activites"}
+					to={"/activites"}
 					className={props.page == "Activities" ? "active" : "page-links"}
 				>
 					Activities
 				</Link>
 				<Link
-					to={props.page == "Admission" ? null : "/admissiondetails"}
+					to={ "/admissiondetails"}
 					className={props.page == "Admission" ? "active" : "page-links"}
 				>
 					Admission
 				</Link>
 				<Link
-					to={props.page == "Calender" ? null : "/calender"}
+					to={"/calender"}
 					className={props.page == "Calender" ? "active" : "page-links"}
 				>
 					Calender
 				</Link>
 				<Link
-					to={props.page == "Gallery" ? null : "/gallery"}
+					to={"/gallery"}
 					className={props.page == "Gallery" ? "active" : "page-links"}
 				>
 					Gallery
 				</Link>
 				<Link
-					to={props.page == "Contact" ? null : "/contactus"}
+					to={ "/contactus"}
 					className={props.page == "Contact" ? "active" : "page-links"}
 				>
 					Contact us
