@@ -49,10 +49,10 @@ export default function StuReg() {
 			window.alert("Please enter valid email");
 			return false;
 		}
-		if (!dt.test(data.date)) {
-			window.alert("Please enter valid date format (dd-mm-yyyy;dd.mm.yyyy;dd/mm/yyyy)");
-			return false;
-		}
+		// if (!dt.test(data.date)) {
+		// 	window.alert("Please enter valid date format (dd-mm-yyyy;dd.mm.yyyy;dd/mm/yyyy)");
+		// 	return false;
+		// }
 		if (!ph.test(data.phone)) {
 			window.alert("Please enter valid phone number");
 			return false;
@@ -71,7 +71,6 @@ export default function StuReg() {
 				whatsapp: sendData.phone,
 			};
 		if (!isValid(sendData)) return;
-		alert("Passed");
 		console.log(sendData);
 		postStudent(sendData);
 		navigate("/", { replace: true });
