@@ -3,11 +3,7 @@ function postTeacher(data) {
 	console.log(data);
 	fetch(`${API_URL}teacherApp`, {
 		method: "POST",
-		mode: "cors",
-		headers: {
-			"Content-Type": "application/json",
-			"Access-Control-Allow-Origin": "*",
-		},
+		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify(data),
 	})
 		.then((response) => response.json())
@@ -22,11 +18,7 @@ function postStudent(data) {
 	console.log(data);
 	fetch(`${API_URL}studentReg`, {
 		method: "POST",
-		mode: "cors",
-		headers: {
-			"Content-Type": "application/json",
-			"Access-Control-Allow-Origin": "*",
-		},
+		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify(data),
 	})
 		.then((response) => response.json())
@@ -44,11 +36,7 @@ function postContact(data) {
 	console.log(data);
 	fetch(`${API_URL}contact`, {
 		method: "POST",
-		mode: "cors",
-		headers: {
-			"Content-Type": "application/json",
-			"Access-Control-Allow-Origin": "*",
-		},
+		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify(data),
 	})
 		.then((response) => response.json())
