@@ -35,7 +35,7 @@ function App() {
 				<Route path="/curriculum" element={<Curri />} />
 				<Route path="/cocurri" element={<Cocurri />} />
 				{/* <Route path="/hostel" element={<Hostel />}></Route> */}
-				<Route path="/scholarship" element={<Scholarship />}></Route>
+				<Route path="/scholarship" element={<Scholarship />} />
 				{/* <Route path="/location" element={<Location />}></Route> */}
 				{/* <Route path="/calender" element={<Calender />}></Route> */}
 				{/* <Route path="/uniform" element={<Uniform />}></Route> */}

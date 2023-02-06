@@ -7,7 +7,7 @@ export default function JoinUs() {
 	function DisplayText() {
 		if (isOver)
 			return (
-				<Link className="join-text" to="/joinus">
+				<Link to="/joinus"  className="join-text" >
 					Join us
 				</Link>
 			);
