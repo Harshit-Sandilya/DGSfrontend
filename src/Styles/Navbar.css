@@ -11,6 +11,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	z-index: 200;
 }
 .logo {
 	background-image: url("../Images/Home/LogoSmall.png");
