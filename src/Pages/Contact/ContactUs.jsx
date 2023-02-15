@@ -23,7 +23,7 @@ export default function ContactUs() {
 	}
 	function checkQuery(query) {
 		const em = /^[\w.+\-]+@gmail\.com$/;
-		const al = /^[A-Za-z]+$/;
+		const al = /^[A-Za-z ]+$/;
 		if (query.fullname === "") {
 			window.alert("Please enter your fullname");
 			return false;
@@ -66,14 +66,14 @@ export default function ContactUs() {
 						<div className="contact-info-text">
 							<p className="conatct-info-text">Call us at:</p>
 							<p className="conatct-info-text">+91-9314011566</p>
-							<p className="conatct-info-text">01594-253561</p>
+							<p className="conatct-info-text">+91-8003445966</p>
 						</div>
 					</div>
 					<div className="contact-info-section">
 						<img src={mail} className="contact-info-img"></img>
 						<div className="contact-info-text">
 							<p>Mail us at:</p>
-							<p>dpsdundlod@gmail.com</p>
+							<p>dundlodgirlsschool@gmail.com</p>
 						</div>
 					</div>
 				</div>
