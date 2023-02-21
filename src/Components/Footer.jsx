@@ -1,5 +1,7 @@
 import "../Styles/Footer.css";
 import React from "react";
+import Mess from "../FoodMenu.pdf";
+import Brochure from "../brochure.pdf";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -12,10 +14,13 @@ export default function Footer() {
 					<h6 className="links-heading">Quick Links</h6>
 				</div>
 				<div className="links-list">
+					<Link to={Brochure} target="_blank" className="link">
+						Brochure
+					</Link>
 					<Link to="/hostel" className="link">
 						Hostel
 					</Link>
-					<Link to="/messmenu" className="link">
+					<Link to={Mess} target="_blank" className="link">
 						Mess Menu
 					</Link>
 					<Link to="/location" className="link">
