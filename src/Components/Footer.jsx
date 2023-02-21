@@ -42,11 +42,11 @@ export default function Footer() {
 			<div className="footer-contact-info">
 				<div className="phone">
 					<div className="phone-logo"></div>
-					<div className="phone-text">+91-9314011566/01594-253561</div>
+					<div className="phone-text">+91-9314011566/01594-294501</div>
 				</div>
 				<div className="mail">
 					<div className="mail-logo"></div>
-					<div className="mail-text">dpsdundlod@gmail.com</div>
+					<div className="mail-text">dundlodgirlsschool@gmail.com</div>
 				</div>
 			</div>
 		</div>
