@@ -1,4 +1,4 @@
-const API_URL = "https://dgsbackend.onrender.com/";
+const API_URL = "https://dgsbackend-u8bc.onrender.com/";
 function postTeacher(data) {
   console.log(data);
   fetch(`${API_URL}teacherApp`, {
@@ -50,8 +50,6 @@ function postContact(data) {
       mode: "cors",
       "Access-Control-Allow-Origin": "*",
     },
-
-    "Access-Control-Allow-Origin": "*",
     body: JSON.stringify(data),
   })
     .then((response) => response.json())
@@ -59,4 +57,5 @@ function postContact(data) {
     .catch((err) => console.log(err));
 }
 
+function getBack() {}
 export { postTeacher, postStudent, postContact };
